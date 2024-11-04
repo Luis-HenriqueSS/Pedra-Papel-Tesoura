@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Pedra, Papel ou Tesoura</title>
+</head>
+<body>
+    <footer>
+        <h2>Pedra, Papel ou Tesoura</h2>
+        <p>Escolha sua jogada</p>
+    </footer>
+
+    <!-- IMAGEM INICIAL -->
+    <img id="escolhaUsuario" src="Jogo.jpg" alt="Escolha usuario" style="transform: scaleX(-1)">
+    <img id="escolhaInimigo" src="Jogo.jpg" alt="Escolha inimigo">
+    <br>
+    <!-- BOTÕES DE ESCOLHA -->
+    <button onclick="jogo('pedra')">Pedra</button>
+    <button onclick="jogo('papel')">Papel</button>
+    <button onclick="jogo('tesoura')">Tesoura</button>
+    <button id="hack">Hack</button>
+
+    <!-- RESULTADO -->
+    <p id="resultado"></p>
+
+    <!-- PONTOS -->
+    <p id="pontosUsuario" class="usuario">Usuario: <br> 0</p>
+    <p id="pontosInimigo" class="inimigo">Inimigo: <br> 0</p>
+</body>
+</html>
